@@ -1,0 +1,50 @@
+.the-loader2 .circle{
+    background-color: #d77600 !important;
+}
+.the-loader .circle {
+    display: inline-block;
+    background-color: #fd6a4f;
+    height: 15px;
+    width: 15px;
+    border-radius: 25px;
+  }
+  
+  #container {
+    height: 200px;
+    margin-top: 50px;
+  }
+  
+  #ball-1 {
+    -webkit-animation-name: bounce;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  #ball-2 {
+    -webkit-animation-name: bounce;
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  #ball-3 {
+    -webkit-animation-name: bounce;
+    -webkit-animation-delay: 0.2s;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(23px);
+    }
+    60% {
+      transform: translateY(-25px);
+    }
+    80% {
+      transform: translateY(0);
+    }
+  }
+  

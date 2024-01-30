@@ -1,0 +1,103 @@
+
+.nav-desgin,.active {
+    position: relative;
+  }
+
+  .active{
+    color: #d77600 !important;
+  }
+
+  .nav-desgin:hover{
+    color: #d77600 !important;
+  }
+  
+  
+  .nav-desgin::before {
+    left: -7px;
+    position: absolute;
+    content: "";
+    top: -1px;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #d77600;
+    border-top: 2px solid #d77600;
+    background-color: transparent;
+    z-index: 1;
+    display: none;
+    animation: enterFromLeft 0.3s ease-out forwards; /* Animation definition */
+  }
+  
+  .nav-desgin:hover::before {
+    display: block;
+  }
+  
+  @keyframes enterFromLeft {
+    from {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); /* Move in from the left */
+      opacity: 1;
+    }
+  }
+  
+  
+  .nav-desgin::after {
+    right: -7px;
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #d77600;
+    border-bottom: 2px solid #d77600;
+    background-color: transparent;
+    z-index: 1;
+    display: none;
+    animation: enterFromRight 0.3s ease-out forwards;
+  }
+  
+  .nav-desgin:hover::after {
+    display: block;
+  }
+  
+  @keyframes enterFromRight {
+    from {
+      transform: translateX(10px); 
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.internal-navbar .active::after{
+    right: -7px;
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #d77600;
+    border-bottom: 2px solid #d77600;
+    background-color: transparent;
+    z-index: 1;
+    animation: enterFromRight 0.3s ease-out forwards;
+}
+
+.internal-navbar .active::before{
+    left: -7px;
+    position: absolute;
+    content: "";
+    top: -1px;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #d77600;
+    border-top: 2px solid #d77600;
+    background-color: transparent;
+    z-index: 1;
+    animation: enterFromLeft 0.3s ease-out forwards; /* Animation definition */
+}
+  

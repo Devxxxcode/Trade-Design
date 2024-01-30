@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ * {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+body * ::-webkit-scrollbar {
+  width: 0px; /* Adjust the width as needed */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #1f262e;
+}
+
+@layer base {
+  .page-width {
+    @apply container mx-auto px-2;
+  }
+  #home-page p {
+    @apply text-textColor;
+  }
+
+  #settings input,#changepassword input{
+    @apply w-full bg-[#050d1a] border border-textMuted rounded-md p-3 text-textMuted outline-none focus:border-customYellow;
+  }
+  #settings label{
+    @apply text-textMuted
+  }
+}
+
+
+
+.form-error {
+  border-color: red !important;
+  /* border-width: px !important; */
+  animation: shake 0.3s !important;
+} 
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  2% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(2px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  }
+
+.form-error::placeholder{
+  color: red !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) !important; /* Invert color for the arrow icon */
+}

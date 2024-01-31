@@ -25,6 +25,14 @@ const AuthHome = () => {
     getAcct()
   },[])
 
+  function formatAsUSDWithoutSymbol(number) {
+    const formattedNumber = Number(number).toLocaleString('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+    return `${formattedNumber} USD`;
+  }
+
   return (
     <div className=" bg-[#050d1a] w-full h-full p-5 overflow-auto">
       {!isLoading && !isEmpty(account) && (
@@ -35,7 +43,7 @@ const AuthHome = () => {
                 Account Balance
               </div>
               <div className=" bg-[#050d1a] w-11/12 rounded-r-full p-8 font-extrabold text-2xl text-white">
-                {account.account_balance} USD
+                {formatAsUSDWithoutSymbol(account.account_balance)} 
               </div>
             </div>
             <div className="flex flex-col rounded-md bg-customYellow p-5 pl-0 pb-8">
@@ -43,7 +51,7 @@ const AuthHome = () => {
                 Total Withdraw
               </div>
               <div className=" bg-[#050d1a] w-11/12 rounded-r-full p-8 font-extrabold text-2xl text-white">
-                {account.total_withdraw} USD
+                {formatAsUSDWithoutSymbol(account.total_withdraw)}
               </div>
             </div>
           </div>
@@ -53,7 +61,7 @@ const AuthHome = () => {
                 Total invest
               </div>
               <div className=" bg-[#050d1a] w-11/12 rounded-r-full p-5 font-extrabold text-2xl text-white">
-                {account.total_invest} USD
+                {formatAsUSDWithoutSymbol(account.total_invest)}
               </div>
             </div>
             <div className="flex flex-col rounded-md bg-customYellow p-3 pl-0">
@@ -61,7 +69,7 @@ const AuthHome = () => {
                 Pending Invest
               </div>
               <div className=" bg-[#050d1a] w-11/12 rounded-r-full p-5 font-extrabold text-2xl text-white">
-                {account.pending_invest} USD
+                {formatAsUSDWithoutSymbol(account.pending_invest)}
               </div>
             </div>
             <div className="flex flex-col rounded-md bg-customYellow p-3 pl-0">
@@ -69,7 +77,7 @@ const AuthHome = () => {
                 Pending Withdraw
               </div>
               <div className=" bg-[#050d1a] w-11/12 rounded-r-full p-5 font-extrabold text-2xl text-white">
-                {account.pending_withdraw} USD
+                {formatAsUSDWithoutSymbol(account.pending_withdraw)} USD
               </div>
             </div>
             <div className="flex flex-col rounded-md bg-customYellow p-3 pl-0">

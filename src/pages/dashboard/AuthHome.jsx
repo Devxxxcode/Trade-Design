@@ -77,7 +77,7 @@ const AuthHome = () => {
                 Pending Withdraw
               </div>
               <div className=" bg-[#050d1a] w-11/12 rounded-r-full p-5 font-extrabold text-2xl text-white">
-                {formatAsUSDWithoutSymbol(account.pending_withdraw)} USD
+                {formatAsUSDWithoutSymbol(account.pending_withdraw)}
               </div>
             </div>
             <div className="flex flex-col rounded-md bg-customYellow p-3 pl-0">

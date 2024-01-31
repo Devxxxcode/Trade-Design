@@ -16,7 +16,7 @@ const InternalNavbar = () => {
         <div className=''>
             <div className='flex justify-between h-[10vh] items-center'>
                 <h1 className='w-1/5'>
-                <Link to={"/"}><img src={logo} alt="" className='h-[4rem]'/> </Link>
+                <Link to={"/"}><img src={logo} alt="" className='h-[6.5rem] md:h-[4rem]'/> </Link>
                 </h1>
 
                 <ul className='hidden lg:flex gap-10 '>

@@ -15,7 +15,7 @@ const Navbar = () => {
      <div className='page-width'>
         <div className='flex justify-between h-[10vh] items-center '>
             <h1 className='w-1/5'>
-            <Link to={"/"}><img src={logo} alt="" className='h-[4rem]'/> </Link>
+            <Link to={"/"}><img src={logo} alt="" className='h-6.5rem md:h-[4rem]'/> </Link>
             </h1>
             <div className='w-3/5 lg:block hidden'>
                 <ul className='flex justify-between items-center'>

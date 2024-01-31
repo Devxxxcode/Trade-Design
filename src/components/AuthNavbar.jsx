@@ -26,7 +26,7 @@ const AuthNavbar = ({user}) => {
                <div className='flex gap-3 w-2/5 md:w-1/5 items-center'>
                <GrLogout  className='text-white text-4xl bg-customYellow p-1 lg:hidden' onClick={()=>setOpen(!open)}/>
                <h1 className=' w-full ' >
-                <Link to={"/"}><img src={logo} alt="" className=' md:h-[4rem]'/> </Link>
+                <Link to={"/"}><img src={logo} alt="" className='h-[6.5rem] md:h-[4rem]'/> </Link>
                 </h1>
                </div>
 

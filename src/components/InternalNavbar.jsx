@@ -15,7 +15,7 @@ const InternalNavbar = () => {
     <div className=' bg-[#030912] lg:bg-transparent internal-navbar sticky top-0 z-50 w-full'>
         <div className=''>
             <div className='flex justify-between h-[10vh] items-center'>
-                <h1 className='w-1/5'>
+                <h1 className='w-2/5 md:w-1/5'>
                 <Link to={"/"}><img src={logo} alt="" className='h-[6.5rem] md:h-[4rem]'/> </Link>
                 </h1>
 

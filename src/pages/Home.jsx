@@ -16,9 +16,11 @@ import icon4 from "../assest/in-profit-icon-4.svg"
 import icon5 from "../assest/in-profit-icon-5.svg"
 import icon6 from "../assest/in-profit-mockup-2.png"
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
+    const navigate = useNavigate()
 
     const backgroundStyle = {
         backgroundImage: `url(${background1})`,
@@ -324,7 +326,7 @@ const Home = () => {
                 </div>
 
                 <div className='flex flex-col justify-center mt-10 gap-4'>
-                    <button className=' bg-customOrange/90 w-[18rem] rounded-md mx-auto text-white text-lg py-2 hover:bg-customOrange'>Setup your trading account</button>
+                    <button className=' bg-customOrange/90 w-[18rem] rounded-md mx-auto text-white text-lg py-2 hover:bg-customOrange' onClick={()=>navigate("/signup")}>Setup your trading account</button>
                     <p>Registration takes only 40 seconds!</p>
                 </div>
             </div>

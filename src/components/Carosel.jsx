@@ -1,8 +1,10 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 import slide1 from "../assest/in-slideshow-image-3.png"
 import slide2 from "../assest/in-slideshow-image-4.png"
+import { useNavigate } from "react-router-dom";
  
 export function CarouselWithContent() {
+  const navigate = useNavigate()
   return (
     <Carousel className="" autoplay={true} loop={true} transition={{ duration: 1 }} navigation={({ setActiveIndex, activeIndex, length }) => (
         <></>
@@ -31,10 +33,10 @@ export function CarouselWithContent() {
 
             </Typography>
             <div className="flex gap-2">
-              <button className="py-[10px] px-[30px] bg-customOrange opacity-90 rounded-md text-white hover:opacity-100">
+              <button className="py-[10px] px-[30px] bg-customOrange opacity-90 rounded-md text-white hover:opacity-100" onClick={()=>navigate("/signup")}>
                 Open account
               </button>
-              <button className="py-[10px] px-[30px] border border-customOrange rounded-md text-customOrange bg-white hidden md:block">
+              <button className="py-[10px] px-[30px] border border-customOrange rounded-md text-customOrange bg-white hidden md:block" onClick={()=>navigate("/login")}>
                 Login account
               </button>
             </div>
@@ -64,10 +66,10 @@ export function CarouselWithContent() {
              Access 40,000+ instruments – across asset classes – to trade, hedge and invest from a single account.
             </Typography>
             <div className="flex gap-2">
-              <button className="py-[10px] px-[30px] bg-customOrange opacity-90 rounded-md text-white hover:opacity-100 ">
+              <button className="py-[10px] px-[30px] bg-customOrange opacity-90 rounded-md text-white hover:opacity-100 " onClick={()=>navigate("/signup")}>
                 Open account
               </button>
-              <button className="py-[10px] px-[30px] border border-customOrange rounded-md text-customOrange bg-white hidden md:block">
+              <button className="py-[10px] px-[30px] border border-customOrange rounded-md text-customOrange bg-white hidden md:block" onClick={()=>navigate("/login")}>
                 Login account
               </button>
             </div>

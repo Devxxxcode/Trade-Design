@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Bitcoin = () => {
+    const navigate = useNavigate()
   return (
     <div className='page-width mt-10 ' id='home-page'>
          <h3 className=' text-customDark text-5xl font-semibold'>Bitcoin</h3>
@@ -79,7 +81,7 @@ const Bitcoin = () => {
             </div>
 
             <div>
-                <button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md'>Get Started</button>
+                <button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md' onClick={()=>navigate("/signup")}>Get Started</button>
             </div>
        </div>
 

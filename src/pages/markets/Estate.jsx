@@ -1,8 +1,10 @@
 import React from 'react'
 import image1 from "../../assest/hm.jpg"
 import image2 from "../../assest/ptt.png"
+import { useNavigate, useNavigation } from 'react-router-dom'
 
 const Estate = () => {
+  const navigate = useNavigate()
   return (
     <div className='page-width mt-10 ' id='home-page'>
         <div className='mt-10 flex  justify-between items-center md:w-10/12 lg:8/12 mx-auto flex-wrap' >
@@ -28,7 +30,7 @@ const Estate = () => {
 
 <p>We've specifically built the TheFipTrades portfolio with the intention of being able to withstand prolonged periods of economic distress. Nothing can be guaranteed, but because of our conservative approach and extensive underwriting processes, we believe the TheFipTrades portfolio is, from a risk-adjusted-return standpoint, well positioned to be able to sustain a severe economic downturn.</p>
 
-<button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md mt-5 mb-32'>Get Started</button>
+<button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md mt-5 mb-32' onClick={()=>navigate("/signup")}>Get Started</button>
        </div>
     </div>
   )

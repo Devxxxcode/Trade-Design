@@ -68,7 +68,6 @@ const InvestmentLog = () => {
           }
           if (logData && logFetchError) {
             setAlert1(true)
-            console.log(logFetchError);
             setAlertInfo1("An Error Occurred")
             setData([])
             setIsLoading(false);
@@ -78,7 +77,6 @@ const InvestmentLog = () => {
       fetchData();
     }, [logData, logFetchError, logIsLoading]);
 
-    console.log(data);
 
   return (
     <div className=" bg-[#050d1a] w-full h-full  p-5 overflow-auto">

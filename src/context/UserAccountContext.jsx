@@ -37,7 +37,6 @@ export const UserAccountProvider = ({ children }) => {
           setIsLoading(false);
         }
         if (isEmpty(userData) && userFetchError) {
-          console.log("dfgmgngnngg");
             setIsLoading(false);
           if (userStatus === 403){
             navigate("/home")

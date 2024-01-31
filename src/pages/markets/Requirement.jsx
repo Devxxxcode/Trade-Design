@@ -2,8 +2,10 @@ import React from "react";
 import image1 from "../../assest/cd3.jpeg";
 import image2 from "../../assest/rt1.jpeg";
 import image3 from "../../assest/cp2.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const Requirement = () => {
+  const navigate = useNavigate()
   return (
     <div className="page-width mt-10 " id="home-page">
       <h3 className=" text-customDark text-5xl font-semibold text-center ">
@@ -93,7 +95,7 @@ const Requirement = () => {
         </div>
       </div>
 
-      <button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md mt-5 mb-32'>Get Started</button>
+      <button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md mt-5 mb-32' onClick={()=>navigate("/signup")}>Get Started</button>
     </div>
   );
 };

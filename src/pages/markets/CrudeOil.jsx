@@ -1,7 +1,9 @@
 import React from "react";
 import image1 from "../../assest/cdd.jpg";
+import { useNavigate } from "react-router-dom";
 
 const CrudeOil = () => {
+  const navigate = useNavigate()
   return (
     <div className="page-width mt-10 " id="home-page">
       <div className="flex flex-col gap-3">
@@ -54,7 +56,7 @@ const CrudeOil = () => {
           ROI: 20% (Depending on market performance and pivot points)
         </h3>
 
-        <button className=' text-white bg-customOrange py-2 w-[9rem] mt-5 mb-16 rounded-md'>Get Started</button>
+        <button className=' text-white bg-customOrange py-2 w-[9rem] mt-5 mb-16 rounded-md' onClick={()=>navigate("/signup")}>Get Started</button>
       </div>
     </div>
   );

@@ -55,7 +55,6 @@ const BitcoinDeposit = () => {
       navigate("/dashboard/home");
     }
     if (!response && postError) {
-      console.log(postError);
       setAlert2(true);
       setAlert1(false);
       setGlobalMessage(null, true);

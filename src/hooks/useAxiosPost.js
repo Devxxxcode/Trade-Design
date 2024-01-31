@@ -32,7 +32,6 @@ const useAxiosPost = () => {
         if (isMounted) {
           setResponse(response.data);
           setPostError(null);
-          console.log(response);
         }
       } catch (error) {
         if (isMounted) {

@@ -1,7 +1,9 @@
 import React from 'react'
 import image1 from "../../assest/mj.jpg"
+import { useNavigate } from 'react-router-dom'
 
 const Marijuana = () => {
+  const navigate = useNavigate()
   return (
     <div className="page-width mt-10 " id="home-page">
         <h3 className=' text-customDark text-5xl font-semibold'>MARIJUANA</h3>
@@ -38,7 +40,7 @@ const Marijuana = () => {
 
 <p>We’ve broken down some of the most common important investments principal and it’s Return on investment(ROI) on monthly basis.</p>
 
-<button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md mb-32'>Get Started</button>
+<button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md mb-32' onClick={()=>navigate("/signup")}>Get Started</button>
         </div>
     </div>
   )

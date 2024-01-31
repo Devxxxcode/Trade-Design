@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Forex = () => {
+  const navigate = useNavigate()
   return (
     <div className='page-width mt-10 ' id='home-page'>
         <h3 className=' text-customDark text-5xl font-semibold'>Trade Forex with TheFipTrades and enjoy competitive spreads</h3>
@@ -13,7 +15,7 @@ const Forex = () => {
         <h3 className=' text-customDark text-3xl font-semibold mt-5'>Experience more than Trading.</h3>
         <p className='text-xl !text-textColor mt-3'>As the world’s most-traded financial market, foreign exchange presents a wealth of opportunities for those who can harness its inherent volatility.</p>
         
-        <button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md mt-5 mb-32'>Get Started</button>
+        <button className=' text-white bg-customOrange py-2 w-[9rem] rounded-md mt-5 mb-32 ' onClick={()=>navigate("/signup")}>Get Started</button>
     </div>
   )
 }

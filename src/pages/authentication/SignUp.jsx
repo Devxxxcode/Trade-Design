@@ -45,7 +45,6 @@ const SignUp = () => {
     }, 2000);
     }
     if (!response && postError) {
-      console.log(postError.message);
       setAlertInfo(postError.message)
       setAlert2(true);
       setAlert(false)

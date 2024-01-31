@@ -68,7 +68,6 @@ const TransferLog = () => {
           }
           if (logData && logFetchError) {
             setAlert1(true)
-            console.log(logFetchError);
             setAlertInfo1("An Error Occurred")
             setData([])
             setIsLoading(false);

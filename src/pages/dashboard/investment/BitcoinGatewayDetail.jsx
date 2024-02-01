@@ -274,8 +274,8 @@ const BitcoinGatewayDetail = () => {
                 type="text"
                 name=""
                 id="hash"
-                pattern="[0-9]*"
-                inputMode="numeric"
+                // pattern="[0-9]*"
+                // inputMode="numeric"
                 value={amount}
                 onChange={handleAmountChange}
                 className="w-full bg-[#050d1a] border border-textMuted/20 rounded-md p-3 text-textMuted outline-none focus:border-customYellow"

@@ -21,7 +21,7 @@ const Withdrawal = () => {
     const [charge, setCharge] = useState("");
     const [finalAmount,setFinalAmount] = useState("")
     const [wallet,setWallet] = useState("")
-    const minAmount = 10000
+    const minAmount = 25000
     const maxAmount = 100000
     const [formErrors, setFormErrors] = useState({});
 

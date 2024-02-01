@@ -173,7 +173,7 @@ const EtherumGatewayDeposit = () => {
                       onCopy={handleCopy}
                     >
                       <button>
-                        <MdOutlineContentCopy />
+                        <MdOutlineContentCopy className="" />
                       </button>
                     </CopyToClipboard>{" "}
                     {isCopied && (
@@ -183,7 +183,7 @@ const EtherumGatewayDeposit = () => {
                     )}
                   </div>
                   <div className="mt-3 mx-auto">
-                    <img src={ethQR} alt="" className="mx-auto" />
+                    <img src={ethQR} alt="" className="mx-auto w-[100%] md:w-[50%]" />
                   </div>
                 </div>
               </div>
@@ -246,6 +246,8 @@ const EtherumGatewayDeposit = () => {
                 type="text"
                 name=""
                 id="hash"
+                pattern="[0-9]*"
+                inputMode="numeric"
                 value={amount}
                 onChange={handleAmountChange}
                 className="w-full bg-[#050d1a] border border-textMuted/20 rounded-md p-3 text-textMuted outline-none focus:border-customYellow"
@@ -257,6 +259,7 @@ const EtherumGatewayDeposit = () => {
                 type="file"
                 name=""
                 id=""
+                required
                 accept="image/*"
                 onChange={handleFileChange}
                 className="w-full bg-[#050d1a] border border-textMuted/20 rounded-md p-3 text-textMuted outline-none focus:border-customYellow"

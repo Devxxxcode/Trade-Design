@@ -150,7 +150,7 @@ const BitcoinDeposit = () => {
                       onCopy={handleCopy}
                     >
                       <button>
-                        <MdOutlineContentCopy />
+                        <MdOutlineContentCopy className=""/>
                       </button>
                     </CopyToClipboard>{" "}
                     {isCopied && (
@@ -175,7 +175,7 @@ const BitcoinDeposit = () => {
                     Happy investing with GlobalSwiftPro!
                   </div>
                   <div className="mt-3 mx-auto">
-                    <img src={bitcoinQR} alt="" className="mx-auto" />
+                    <img src={bitcoinQR} alt="" className="mx-auto w-[100%] md:w-[50%]" />
                   </div>
                 </div>
               </div>
@@ -238,6 +238,8 @@ const BitcoinDeposit = () => {
                 type="text"
                 name=""
                 id="hash"
+                pattern="[0-9]*"
+                inputMode="numeric"
                 value={amount}
                 onChange={handleAmountChange}
                 className="w-full bg-[#050d1a] border border-textMuted/20 rounded-md p-3 text-textMuted outline-none focus:border-customYellow"
@@ -248,6 +250,7 @@ const BitcoinDeposit = () => {
               <input
                 type="file"
                 name=""
+                required
                 id="hash"
                 className="w-full bg-[#050d1a] border border-textMuted/20 rounded-md p-3 text-textMuted outline-none focus:border-customYellow"
                 accept="image/*"

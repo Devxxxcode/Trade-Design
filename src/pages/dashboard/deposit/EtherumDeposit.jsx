@@ -139,7 +139,7 @@ const EtherumDeposit = () => {
                       onCopy={handleCopy}
                     >
                       <button>
-                        <MdOutlineContentCopy />
+                        <MdOutlineContentCopy className="" />
                       </button>
                     </CopyToClipboard>{" "}
                     {isCopied && (
@@ -149,7 +149,7 @@ const EtherumDeposit = () => {
                     )}
                   </div>
                   <div className="mt-3 mx-auto">
-                    <img src={ethQR} alt="" className="mx-auto" />
+                    <img src={ethQR} alt="" className="mx-auto w-[100%] md:w-[50%]" />
                   </div>
                 </div>
               </div>
@@ -212,6 +212,8 @@ const EtherumDeposit = () => {
                 type="text"
                 name=""
                 id="hash"
+                pattern="[0-9]*"
+                inputMode="numeric"
                 value={amount}
                 onChange={handleAmountChange}
                 className="w-full bg-[#050d1a] border border-textMuted/20 rounded-md p-3 text-textMuted outline-none focus:border-customYellow"
@@ -222,6 +224,7 @@ const EtherumDeposit = () => {
               <input
                 type="file"
                 name=""
+                required
                 id=""
                 accept="image/*"
                 onChange={handleFileChange}

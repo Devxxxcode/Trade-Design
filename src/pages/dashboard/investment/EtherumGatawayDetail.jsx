@@ -134,6 +134,10 @@ const EtherumGatewayDeposit = () => {
       formData2.append("amount", amount);
       formData2.append("gateway", "Ethereum");
       formData2.append("investment_plan", data.id);
+
+      if (selectedFile) {
+        formData2.append("image", selectedFile);
+      }
       
 
       triggerPost(formData2, `${apiUrl}/account/invest-deposit/`, token);

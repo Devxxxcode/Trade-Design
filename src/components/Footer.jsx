@@ -40,12 +40,12 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-3 items-center'>
                         <IoMailUnreadSharp className='text-white'/>
-                        <div className='text-white/50 '>info@thefiptrades.com</div>
+                        <div className='text-white/50 '>service@fiptrades.com</div>
                     </div>
-                    <div className='flex gap-3 items-center'>
+                    {/* <div className='flex gap-3 items-center'>
                         <MdCall className='text-white'/>
                         <div className='text-white/50 '>+16192890994</div>
-                    </div>
+                    </div> */}
                     <div className='flex gap-3 items-center'>
                         <FaLocationPin className='text-white'/>
                         <div className='text-white/50 '>2174 North point pleasant road, Texas</div>

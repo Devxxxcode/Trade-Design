@@ -225,7 +225,7 @@ const Home = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                     <div className='flex flex-col gap-3'>
                         <div className='border-l-8 border-textMuted pl-2 text-customDark font-semibold text-xl h-4 flex items-center'>
-                            STARTER
+                            STANDARD PACAKAGE
                     </div>
                         <p>✓ Trading Instruments: 36 currency pairs, Metals, Cryptocurrencies</p>
                         <p>✓ Minimum deposit: 10,000 USD / 10,000 EUR</p>
@@ -235,11 +235,11 @@ const Home = () => {
                         <p>✓ Deposit bonuses: All offers</p>
                         <p>✓ Loyalty bonuses: All offers</p>
 
-                        <button className=' bg-customOrange/90 w-[9rem] py-2 rounded-lg text-white hover:bg-customOrange'>Choose Plan</button>
+                        <button className=' bg-customOrange/90 w-[9rem] py-2 rounded-lg text-white hover:bg-customOrange' onClick={()=>navigate("/login")}>Choose Plan</button>
                     </div>
                     <div className='flex flex-col gap-3'>
                         <div className='border-l-8 border-textMuted pl-2 text-customDark font-semibold text-xl h-4 flex items-center'>
-                        SILVER
+                        PREMIUM PACAKAGE
                     </div>
                             <p>✓ Trading Instruments: 36 currency pairs, Metals, CFD on US stocks, CFD on Indices, CFD on Oil, Cryptocurrencies</p>
                             <p>✓ Minimum deposit: 25,000 USD / 25,000 EUR</p>
@@ -248,11 +248,11 @@ const Home = () => {
                             <p>✓ Return on Investment: 216%</p>
                             <p>✓ Deposit bonuses: All offers</p>
                             <p>✓ Loyalty bonuses: All offers</p>
-                        <button className=' bg-customOrange/90 w-[9rem] py-2 rounded-lg text-white hover:bg-customOrange'>Choose Plan</button>
+                        <button className=' bg-customOrange/90 w-[9rem] py-2 rounded-lg text-white hover:bg-customOrange' onClick={()=>navigate("/login")} >Choose Plan</button>
                     </div>
                     <div className='flex flex-col gap-3'>
                         <div className='border-l-8 border-textMuted pl-2 text-customDark font-semibold text-xl h-4 flex items-center'>
-                        GOLD
+                        ULTIMATE PACKAGE
                     </div>
                         <p>✓ Trading Instruments: 36 currency pairs, Metals, CFD on US stocks, CFD on Indices, CFD on Oil, Cryptocurrencies</p>
                         <p>✓ Minimum deposit: 50,000 USD / 50,000 EUR</p>
@@ -262,9 +262,9 @@ const Home = () => {
                         <p>✓ Deposit bonuses: All offers</p>
                         <p>✓ Loyalty bonuses: All offers</p>
 
-                        <button className=' bg-customOrange/90 w-[9rem] py-2 rounded-lg text-white hover:bg-customOrange'>Choose Plan</button>
+                        <button className=' bg-customOrange/90 w-[9rem] py-2 rounded-lg text-white hover:bg-customOrange' onClick={()=>navigate("/login")}>Choose Plan</button>
                     </div>
-                    <div className='flex flex-col gap-3'>
+                    {/* <div className='flex flex-col gap-3'>
                         <div className='border-l-8 border-textMuted pl-2 text-customDark font-semibold text-xl h-4 flex items-center'>
                         PLATINUM
                     </div>
@@ -277,7 +277,7 @@ const Home = () => {
                         <p>✓ Loyalty bonuses: All offers</p>
 
                         <button className=' bg-customOrange/90 w-[9rem] py-2 rounded-lg text-white hover:bg-customOrange'>Choose Plan</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

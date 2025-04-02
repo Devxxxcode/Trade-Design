@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-3 items-center'>
                         <IoMailUnreadSharp className='text-white'/>
-                        <div className='text-white/50 '>service@fiptrades.com</div>
+                        <div className='text-white/50 '>Support@fiptrades.net</div>
                     </div>
                     {/* <div className='flex gap-3 items-center'>
                         <MdCall className='text-white'/>

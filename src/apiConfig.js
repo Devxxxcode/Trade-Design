@@ -4,7 +4,8 @@ import dBtc from "./assest/bitcoinQr.png"
 import devCodeEthQR from "./assest/devQR/devEth.jpg"
 import dCodeEthQR from "./assest/ethQR.png"
 
-export const apiUrl = import.meta.env.VITE_API_URL;
+// export const apiUrl = import.meta.env.VITE_API_URL;
+export const apiUrl ="https://admin.fiptrades.net"
 
 const versionDev = import.meta.env.VITE_VERSION_DEV === "true";
 

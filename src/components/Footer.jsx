@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Footer = () => {
     const navigate = useNavigate()
     const date = new Date().getFullYear()
+    
   return (
     <div className='bg-[#463a5c]'>
         <div className='page-width py-10'>

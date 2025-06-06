@@ -225,10 +225,10 @@ const Home = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                     <div className='flex flex-col gap-3'>
                         <div className='border-l-8 border-textMuted pl-2 text-customDark font-semibold text-xl h-4 flex items-center'>
-                            STANDARD PACAKAGE
+                            STANDARD PLAN
                     </div>
                         <p>✓ Trading Instruments: 36 currency pairs, Metals, Cryptocurrencies</p>
-                        <p>✓ Minimum deposit: 10,000 USD / 10,000 EUR</p>
+                        <p>✓ Minimum deposit: 1000 USD / 1000 EUR</p>
                         <p>✓ Spread: Floating from 1.3 pips</p>
                         <p>✓ Maximum leverage: 24,999</p>
                         <p>✓ Return on Investment: 187%</p>
@@ -239,10 +239,10 @@ const Home = () => {
                     </div>
                     <div className='flex flex-col gap-3'>
                         <div className='border-l-8 border-textMuted pl-2 text-customDark font-semibold text-xl h-4 flex items-center'>
-                        PREMIUM PACAKAGE
+                        PREMIUM PLAN
                     </div>
                             <p>✓ Trading Instruments: 36 currency pairs, Metals, CFD on US stocks, CFD on Indices, CFD on Oil, Cryptocurrencies</p>
-                            <p>✓ Minimum deposit: 25,000 USD / 25,000 EUR</p>
+                            <p>✓ Minimum deposit: 10,000 USD / 10,000 EUR</p>
                             <p>✓ Spread: Floating from 1.3 pips</p>
                             <p>✓ Maximum : 49,999</p>
                             <p>✓ Return on Investment: 216%</p>
@@ -252,10 +252,10 @@ const Home = () => {
                     </div>
                     <div className='flex flex-col gap-3'>
                         <div className='border-l-8 border-textMuted pl-2 text-customDark font-semibold text-xl h-4 flex items-center'>
-                        ULTIMATE PACKAGE
+                        ULTIMATE PLAN
                     </div>
                         <p>✓ Trading Instruments: 36 currency pairs, Metals, CFD on US stocks, CFD on Indices, CFD on Oil, Cryptocurrencies</p>
-                        <p>✓ Minimum deposit: 50,000 USD / 50,000 EUR</p>
+                        <p>✓ Minimum deposit: 25,000 USD / 25,000 EUR</p>
                         <p>✓ Spread: Floating from 0 pips</p>
                         <p>✓ Maximum leverage: 99,999</p>
                         <p>✓ Return on Investment: 246%</p>

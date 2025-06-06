@@ -134,10 +134,10 @@ const BitcoinDeposit = () => {
                 <div className="p-2 leading-8 break-words">
                   <div className="break-words">
                     Deposit Instructions - BTC Wallet Address:To make a deposit
-                    to TheFipTrades, follow these steps: <br /> Step 1: Log in
+                    to Fip Trades, follow these steps: <br /> Step 1: Log in
                     to your BTC wallet or exchange account. <br /> Step 2:
                     Initiate a BTC withdrawal transaction. <br /> Step 3: Paste
-                    the Thefiptrades BTC wallet address provided below as the
+                    the fip trades BTC wallet address provided below as the
                     destination address: <br />
                     <span className=" break-all">
                       Wallet Address: &nbsp;
@@ -163,16 +163,15 @@ const BitcoinDeposit = () => {
                     wallet address and verify all transaction details before
                     proceeding. Once the transaction is confirmed on the
                     blockchain, your funds will be credited to your
-                    GlobalSwiftPro account. Upload Proof Screenshot :
+                    account. Upload Proof Screenshot :
                     Transaction Hash: [Insert Transaction Hash] Dollar Amount:
                     [Insert Dollar Amount] [Attach Screenshot ] Please note that
                     blockchain transactions may take some time to be confirmed,
                     depending on network congestion. Rest assured, your funds
-                    will be deposited to your GlobalSwiftPro account once the
+                    will be deposited to your account once the
                     transaction is successfully processed. If you encounter any
                     issues or require further assistance, feel free to contact
                     our customer support team, available 24/7 to assist you.
-                    Happy investing with GlobalSwiftPro!
                   </div>
                   <div className="mt-3 mx-auto">
                     <img src={bitcoinQR} alt="" className="mx-auto w-[100%] md:w-[50%]" />

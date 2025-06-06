@@ -200,17 +200,16 @@ const BitcoinGatewayDetail = () => {
                     Please ensure that you provide the correct wallet address
                     and verify all transaction details before proceeding. Once
                     the transaction is confirmed on the blockchain, your funds
-                    will be credited to your GlobalSwiftPro account. Upload
+                    will be credited to your account. Upload
                     Proof Screenshot : Transaction Hash: [Insert Transaction
                     Hash] Dollar Amount: [Insert Dollar Amount] [Attach
                     Screenshot ] Please note that blockchain transactions may
                     take some time to be confirmed, depending on network
                     congestion. Rest assured, your funds will be deposited to
-                    your GlobalSwiftPro account once the transaction is
+                    your account once the transaction is
                     successfully processed. If you encounter any issues or
                     require further assistance, feel free to contact our
-                    customer support team, available 24/7 to assist you. Happy
-                    investing with GlobalSwiftPro!
+                    customer support team, available 24/7 to assist you. 
                   </div>
                   <div className="mt-3 mx-auto">
                     <img src={bitcoinQR} alt="" className="mx-auto w-[100%] md:w-[50%]" />

@@ -132,7 +132,12 @@ const EtherumDeposit = () => {
 
                 <div className="p-2 leading-8 break-words">
                   <div>
-                  Send the Deposit Amount to the wallet address below :
+                    Deposit Instructions - ETH Wallet Address:To make a deposit
+                    to Fip Trades, follow these steps: <br /> Step 1: Log in
+                    to your ETH wallet or exchange account. <br /> Step 2:
+                    Initiate a ETH withdrawal transaction. <br /> Step 3: Paste
+                    the fip trades ETH wallet address provided below as the
+                    destination address: <br />
                     <br /><span className=" font-extrabold mr-1">{ethWalletAddress}</span>
                     <CopyToClipboard
                       text={ethWalletAddress}
@@ -146,7 +151,22 @@ const EtherumDeposit = () => {
                       <span className="bg-white text-black font-light text-xs p-1 py-[0.1rem]">
                         copied
                       </span>
+                      
                     )}
+                    <br /> Step 4: Confirm the transaction details and complete
+                    the withdrawal. Please ensure that you provide the correct
+                    wallet address and verify all transaction details before
+                    proceeding. Once the transaction is confirmed on the
+                    blockchain, your funds will be credited to your
+                    account. Upload Proof Screenshot :
+                    Transaction Hash: [Insert Transaction Hash] Dollar Amount:
+                    [Insert Dollar Amount] [Attach Screenshot ] Please note that
+                    blockchain transactions may take some time to be confirmed,
+                    depending on network congestion. Rest assured, your funds
+                    will be deposited to your account once the
+                    transaction is successfully processed. If you encounter any
+                    issues or require further assistance, feel free to contact
+                    our customer support team, available 24/7 to assist you.
                   </div>
                   <div className="mt-3 mx-auto">
                     <img src={ethQR} alt="" className="mx-auto w-[100%] md:w-[50%]" />

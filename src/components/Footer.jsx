@@ -47,10 +47,10 @@ const Footer = () => {
                         <MdCall className='text-white'/>
                         <div className='text-white/50 '>+16192890994</div>
                     </div> */}
-                    <div className='flex gap-3 items-center'>
+                    {/* <div className='flex gap-3 items-center'>
                         <FaLocationPin className='text-white'/>
                         <div className='text-white/50 '>2174 North point pleasant road, Texas</div>
-                    </div>
+                    </div> */}
                 </div>
                 
              </div>
